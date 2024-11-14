@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICKET.COM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .banner {
+            position: relative;
+            background-image: url(''); 
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .banner-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tabs button {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .tabs button:hover, .tabs button.active {
+            border-bottom: 3px solid #e60000;
+            color: #e60000;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .artist-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .artist-info img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .artist-description {
+            max-width: 600px;
+        }
+
+        .artist-description h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .member-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .member-card {
+            background-color: #333;
+            color: #fff;
+            width: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .member-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 3px solid #e60000;
+        }
+
+        .member-card h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .member-card p {
+            font-size: 0.9em;
+            margin-top: 5px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TICKET.COM</div>
+        <nav>
+            <a href="paginaincio.html">Inicio</a>
+            <a href="#">Conciertos</a>
+            <a href="#">KPOP</a>
+            <a href="#">Salir</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+           
+            <p>KPOP</p>
+            <h1>ATE WORLD TOUR</h1>
+            <a href="#" style="color: #e60000; font-weight: bold;">Tickets</a>
+        </div>
+    </section>
+    <div class="tabs">
+        <button class="active">Sobre el Artista</button>
+        <button>Conciertos</button>
+    </div>
+    <section class="content">
+        <div class="artist-info">
+            <img src="5SOS.jpg" alt="5 Seconds Of Summer">
+            <div class="artist-description">
+                <h2>5SOS</h2>
+                <p>5 Seconds of Summer (5SOS) es una banda australiana de pop rock formada en 2011. Está compuesta por Luke Hemmings, Michael Clifford, Calum Hood y Ashton Irwin. Se dieron a conocer por sus covers de canciones en YouTube, y luego lograron éxito con su propio material, fusionando elementos de pop punk y pop rock. A lo largo de los años, han lanzado varios álbumes y se han destacado por su energía en el escenario y su estilo musical ecléctico.</p>
+                <div class="social-icons">
+                    <a href="#"><i><img src="spotify.jpg"  alt=""></i></a>
+                    <a href="#"><i><img src="youtube.jpg" alt=""></i></a>
+                    <a href="#"><i><img src="applemusic.jpg" alt=""></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-cards">
+            <div class="member-card">
+                <img src="calum thomas hood.jfif" alt="Bang Chan">
+                <h3>Calum Hood</h3>
+                <p>(Bajista y coros): Nacido el 16 de enero de 1996 en Sídney, Australia, Calum es el bajista de la banda y también contribuye con coros. Con su voz profunda y su estilo tranquilo, ha sido una de las figuras más carismáticas del grupo. Calum es conocido por su pasión por el fútbol, su cercanía con los fans y su actitud relajada tanto en el escenario como fuera de él.</p>
+            </div>
+            <div class="member-card">
+                <img src="ashton irwin hands.jfif" alt="Lee Know">
+                <h3>Ashton Irwin</h3>
+                <p>(Bajista y coros): Nacido el 16 de enero de 1996 en Sídney, Australia, Calum es el bajista de la banda y también contribuye con coros. Con su voz profunda y su estilo tranquilo, ha sido una de las figuras más carismáticas del grupo. Calum es conocido por su pasión por el fútbol, su cercanía con los fans y su actitud relajada tanto en el escenario como fuera de él.</p>
+            </div>
+            <div class="member-card">
+                <img src="luke hemmings.jfif" alt="Bang Chan">
+                <h3>Luke Hemmings</h3>
+                <p>(Vocalista principal y guitarrista rítmico): Nacido el 16 de julio de 1996 en Sídney, Australia, Luke es el líder vocal de la banda. Con su distintiva voz y presencia en el escenario, ha sido una de las caras más conocidas de 5SOS. Además de cantar, toca la guitarra rítmica. Luke también ha lanzado proyectos en solitario, destacando su estilo más introspectivo en su álbum debut.</p>
+            </div>
+            <div class="member-card">
+                <img src="michael.jfif" alt="Hwang Hyunjin">
+                <h3>Michael Clifford</h3>
+                <p>(Guitarrista principal y coros): Nacido el 20 de noviembre de 1995 en Sídney, Australia, Michael es el guitarrista principal de la banda y también aporta su voz en los coros. Es conocido por su estilo excéntrico, especialmente por su cabello de colores brillantes, y por su actitud desenfadada. Michael es muy activo en las redes sociales, donde interactúa con los fans y comparte su sentido del humor.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
